@@ -98,7 +98,8 @@ import LeadStats from "@/components/admin/LeadStats";
 import LeadTable from "@/components/admin/LeadTable";
 import { createServerSupabase } from "@/lib/supabase";
 import type { Lead, TeamMember } from "@/types/lead";
-
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 const fallbackTeamMembers: TeamMember[] = [
   {
     id: "tm-1",

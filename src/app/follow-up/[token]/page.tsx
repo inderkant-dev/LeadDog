@@ -87,7 +87,8 @@ import Link from "next/link";
 import CustomerReplyForm from "@/components/followup/CustomerReplyForm";
 import { createServerSupabase } from "@/lib/supabase";
 import type { Lead } from "@/types/lead";
-
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 type PageProps = {
   params: Promise<{ token: string }> | { token: string };
 };

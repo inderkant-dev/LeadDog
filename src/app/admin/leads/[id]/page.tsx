@@ -211,7 +211,8 @@ import SendFollowupButton from "@/components/admin/SendFollowupButton";
 import StatusBadge, { PriorityBadge } from "@/components/admin/StatusBadge";
 import { createServerSupabase } from "@/lib/supabase";
 import type { Followup, Lead, LeadReply } from "@/types/lead";
-
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 type PageProps = {
   params: Promise<{ id: string }> | { id: string };
 };
